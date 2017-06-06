@@ -1617,8 +1617,9 @@ img.max-h {
  */
 body {
   font: 14px/1.5em;
+  font-family: 'Open Sans', sans-serif;
   background-color: #fff;
-  color: #333;
+  color: #555;
 }
 
 p {
@@ -1632,10 +1633,14 @@ table {
 h1, h2, h3, h4, h5 {
   line-height: 1em;
   margin-bottom: 20px;
+  color: #103478;
 }
 
 h1 {
   font-size: 48px;
+  font-weight: 300;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightskyblue;
 }
 
 h2 {
@@ -1683,6 +1688,32 @@ h4 {
     }
 }
 */
+body {
+  min-height: 1500px;
+}
+
+.footer {
+  background: url("../images/footer-back.png") no-repeat 0 bottom transparent;
+  background-size: 60%;
+  min-height: 600px;
+}
+
+.page-secondary {
+  background: url("../images/header-back.png") no-repeat right top transparent;
+  background-size: 60%;
+}
+.page-secondary .page-content {
+  margin-top: 100px;
+}
+
+.logo {
+  background: url("../images/logo.png") no-repeat center center transparent;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  margin: 40px 60px 0 0;
+}
+
 /*
   Icons used across the site can be globaly added here.
 */
