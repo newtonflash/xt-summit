@@ -4,6 +4,35 @@
     <% include /global-includes/header.ejs %>
     <div class="container page-content">
         <h1>Register</h1>
+
+
+        <form action="/thank-you.html" method="post">
+            <fieldset>
+                <legend>Register Your top</legend>
+                <div class="form-ctrl">
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" value="" required  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" aria-required="true" aria-describedby="name-format">
+                    <span id="name-format" class="help">Format: firstname lastname</span>
+                </div>
+                <div class="form-ctrl">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="" required aria-required="true">
+                </div>
+                <div class="form-ctrl">
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website" value="">
+                </div>
+                <div class="form-ctrl">
+                    <label for="numTickets"><abbr title="Number">No.</abbr> of Tickets:</label>
+                    <input type="number" id="numTickets" name="numTickets" value="" required aria-required="true" min="1" max="4">
+                </div>
+                <div class="form-ctrl submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+
+
     </div>
     <% include /global-includes/footer.ejs %>
     <% include /global-includes/footer-library.ejs %>
