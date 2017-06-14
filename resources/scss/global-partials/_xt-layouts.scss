@@ -1,0 +1,19 @@
+// put your layout like two column, three-column layout information here
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  //min-height: 1500px;
+  background-image: url("../images/header-back.png"), url("../images/footer-back.png");
+  background-size: 40%, 30%;
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  padding-bottom: 100px;
+}
+
+.content-wrapper {
+  margin: 40px 0;
+}
+

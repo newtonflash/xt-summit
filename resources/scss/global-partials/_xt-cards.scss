@@ -1,0 +1,99 @@
+$card-width: 250px;
+$card-height: 300px;
+
+.flip-box {
+	margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: $card-width;
+  height: $card-height;
+  perspective: 400px;
+  .object, .front, .back {
+    width: 100%;
+    height: 100%;
+  }
+  .object {
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+    transform: translateZ(-75px);
+    &:hover, &:focus {
+      transition-duration: 0.5s;
+      transform: translateZ(-75px) rotateY(180deg);
+    }
+  }
+  .front, .back, .flank {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+  }
+  .front {
+    z-index: 1;
+    background: #fff;
+    transform: rotateY(0deg) translateZ(75px);
+  }
+  .back {
+    z-index: 0;
+    background: rgb(194, 226, 255);
+    transform: rotateY(180deg) translateZ(75px);
+  }
+  .flank {
+    width: 150px;
+    height: $card-height;
+    background-color: rgba(0, 0, 0, .9);
+    &-left {
+    	left: 0;
+    	transform: rotateY(-90deg) translateZ(75px);
+    }
+    &-right {
+    	right: 0;
+    	transform: rotateY(-90deg) translateZ(-75px);
+    }
+  }
+  .flip-content {
+  	padding: 15px;
+  }
+}
+
+.credit-corner {
+	  text-align: right;
+    padding: 5px 10px;
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+	&:after {
+		position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.71);
+    right: -60px;
+    height: 300px;
+    z-index: -1;
+    width: 250px;
+    top: -65px;
+    transform: rotate(-115deg);
+	}
+
+}
+.credit-thumb {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 5px solid #29659c;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.credit-detail {
+ text-align: center;
+}
+
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {}
