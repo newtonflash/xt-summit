@@ -28,9 +28,11 @@
 @import "patterns/atoms/icons";
 
 
+
 //modules - if your site is small you can include modules in once single file,
 // else you can separate it out to another file
 @import "modules/home-page";
+@import "modules/xt-nav";
 @import "modules/xt-accordion";
 @import "modules/xt-tabs";
 @import "modules/xt-media";
