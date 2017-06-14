@@ -13,6 +13,7 @@
 @import "global-partials/sf-base";
 @import "global-partials/sf-mixins";
 @import "global-partials/sf-layouts";
+@import "global-partials/forms";
 
 //components
 @import "patterns/atoms/button";
@@ -24,4 +25,7 @@
 // else you can separate it out to another file
 @import "modules/home-page";
 @import "modules/xt-nav";
+@import "modules/xt-accordion";
+@import "modules/xt-tabs";
+@import "modules/xt-media";
 
