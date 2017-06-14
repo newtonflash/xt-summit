@@ -3,7 +3,9 @@
 //libraries
 @import "libs/staticframe/sf-pre-init";
 @import "libs/staticframe/sf-utils";
-@import "libs/bootstrap/bootstrap";
+//@import "libs/bootstrap/bootstrap";
+@import "libs/foundation/foundation";
+@import "libs/animate/animate";
 
 //insert your theme constants here
 @import "themes/default/fonts";
@@ -12,8 +14,14 @@
 //global utilities
 @import "global-partials/sf-base";
 @import "global-partials/sf-mixins";
-@import "global-partials/sf-layouts";
+@import "global-partials/xt-layouts";
 @import "global-partials/forms";
+@import "global-partials/xt-base";
+@import "global-partials/xt-header";
+@import "global-partials/xt-footer";
+@import "global-partials/xt-slideShow";
+@import "global-partials/xt-cards";
+
 
 //components
 @import "patterns/atoms/button";
@@ -23,4 +31,7 @@
 //modules - if your site is small you can include modules in once single file,
 // else you can separate it out to another file
 @import "modules/home-page";
+@import "modules/xt-accordion";
+@import "modules/xt-tabs";
+@import "modules/xt-media";
 
