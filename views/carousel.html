@@ -1,0 +1,42 @@
+<% include /global-includes/html-header.ejs %>
+    <body class="carousel-pic">
+        <% include /global-includes/header.ejs %>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item">
+                    <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Without">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="https://static.pexels.com/photos/3247/nature-forest-industry-rails.jpg">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript">
+                </div>
+    
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-4" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <% include /global-includes/footer.ejs %>
+        <% include /global-includes/footer-library.ejs %>
+    </body>
+</html>
