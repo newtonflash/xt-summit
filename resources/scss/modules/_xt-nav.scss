@@ -49,7 +49,7 @@
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        background: #fff;
+        background: $blue6;
         border-radius: 3px;
         z-index: 1;
         transform-origin: 4px 0px;
@@ -68,7 +68,7 @@
     #menuToggle .menuclass:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
-        background: #fff;
+        //background: #fff;
     }
     /*
  * But let's hide the middle one.
@@ -145,6 +145,8 @@
             }
         }
         .face {
+
+        list-style: none;
             position: absolute;
             height: 310px;
             width: 300px;
