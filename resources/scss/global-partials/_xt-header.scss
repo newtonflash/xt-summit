@@ -1,35 +1,28 @@
 body {
-  padding-top: 50px;
+  padding-top: 86px;
 }
 
 .main-header {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 1);
   border-bottom: 1px solid lightskyblue;
-  padding: 10px 0;
+  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
   .logo {
-    background: url("../images/logo.png") no-repeat center center transparent;
-    width: 60px;
-    height: 30px;
-    background-size: contain;
     float: left;
-    //position: fixed;
-    //top: 20px;
-    //z-index: 9;
-  }
-}
-
-.main-nav {
-  float: right;
-  li {
-    float: left;
-    padding-left: 20px;
-    a {
-      font-size: 12px;
+    .logo-img {
+      background: url("../images/logo.png") no-repeat center center transparent;
+      width: 90px;
+      height: 45px;
+      background-size: contain;
+      display: block;
+    }
+    .logo-text {
+      font-size: 14px;
+      text-transform: uppercase;
     }
   }
 }

@@ -68,6 +68,7 @@
 @include foundation-flex-classes;
 @include foundation-flex-grid;
 @include foundation-card;
+@include foundation-typography;
 
 @mixin foundation-everything($flex: false) {
   @if $flex {

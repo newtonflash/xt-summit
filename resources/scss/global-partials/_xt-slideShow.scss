@@ -1,10 +1,12 @@
+$slideshow-height: 550px;
+
 .sp-slideshow {
   position: relative;
   margin: 0 0 10px 0;
   width: 100%;
   max-width: 1500px;
   min-width: 260px;
-  height: 650px;
+  height: $slideshow-height;
 }
 
 .sp-content {

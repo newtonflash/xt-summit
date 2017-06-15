@@ -1,11 +1,9 @@
 <% include /global-includes/html-header.ejs %>
-
-<body class="page-secondary page-register">
-    <% include /global-includes/header.ejs %>
-    <div class="container page-content">
-        <h1>Register</h1>
-
-
+  <body>
+    <% include /global-includes/xt-header.ejs %>
+      <div class="content-wrapper">
+        <div class="row">
+          <div class="column">
         <form action="/thank-you.html" method="post">
             <fieldset>
                 <legend>Register Your top</legend>
@@ -30,12 +28,10 @@
                     <input type="submit" value="Submit">
                 </div>
             </fieldset>
-        </form>
+        </form></div>
+        </div>
+      </div>
+      <% include /global-includes/xt-footer.ejs %>
+  </body>
 
-
-    </div>
-    <% include /global-includes/footer.ejs %>
-    <% include /global-includes/footer-library.ejs %>
-
-</body>
-</html>
+  </html>
