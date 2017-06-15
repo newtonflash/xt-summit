@@ -65,6 +65,7 @@
 @import 'components/tooltip';
 
 @include foundation-global-styles;
+@include foundation-flex-classes;
 @include foundation-flex-grid;
 @include foundation-card;
 
