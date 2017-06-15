@@ -3,7 +3,7 @@ $xt-media-width: 300px;
 .xt-media-container {
   margin: 0 auto;
   label {
-    width: 25%;
+    width: 200px;
     height: 30px;
     cursor: pointer;
     float: left;
@@ -21,15 +21,15 @@ $xt-media-width: 300px;
       transform: scale(1, 1);
       transition: transform 0.3s linear;
     }
-    &.xt-media-selector-1:checked ~ .xt-media-items .xt-media-item-1,
-    &.xt-media-selector-2:checked ~ .xt-media-items .xt-media-item-2,
-    &.xt-media-selector-3:checked ~ .xt-media-items .xt-media-item-3 {
+    &.xt-media-selector-1:checked ~ .xt-media-items .media-year-2015,
+    &.xt-media-selector-2:checked ~ .xt-media-items .media-year-2016,
+    &.xt-media-selector-3:checked ~ .xt-media-items .media-year-2017 {
       transition: transform 0.3s linear, width 0s linear 0.3s;
       animation: scaleUp 0.3s linear 0.4s forwards;
     }
-    &.xt-media-selector-1:checked ~ .xt-media-items li:not(.xt-media-item-1),
-    &.xt-media-selector-2:checked ~ .xt-media-items li:not(.xt-media-item-2),
-    &.xt-media-selector-3:checked ~ .xt-media-items li:not(.xt-media-item-3) {
+    &.xt-media-selector-1:checked ~ .xt-media-items li:not(.media-year-2015),
+    &.xt-media-selector-2:checked ~ .xt-media-items li:not(.media-year-2016),
+    &.xt-media-selector-3:checked ~ .xt-media-items li:not(.media-year-2017) {
       animation: scaleDown 0.3s linear forwards;
     }
   }
@@ -39,11 +39,13 @@ $xt-media-width: 300px;
   position: relative;
   margin: 0px auto;
   padding-top: 20px;
+  list-style: none;
+  @include clearfix;
   li {
     margin: 0px;
     float: left;
     //height: 148px;
-    width: 0px;
+    //width: 0px;
     transform: scale(0, 0);
   }
   a {
@@ -53,6 +55,9 @@ $xt-media-width: 300px;
     background: #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     margin: 4px;
+    &:after {
+      content: attr(data-img);
+    }
     span {
       display: block;
       background: rgba(113, 123, 161, 0.9);
@@ -75,6 +80,9 @@ $xt-media-width: 300px;
       display: block;
       width: 100%;
       height: auto;
+      &:after {
+        content: attr(data-img);
+      }
     }
     &:hover span {
       height: 80px;
