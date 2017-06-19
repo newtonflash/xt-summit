@@ -1,42 +1,89 @@
 <% include /global-includes/html-header.ejs %>
+
   <body>
     <% include /global-includes/xt-header.ejs %>
-      <div class="content-wrapper">
+      <div class="page-wrapper">
         <div class="row">
-        <div class="column">
-          <section class="xt-accordion">
-            <div>
-              <input id="ac-1" name="accordion-1" type="checkbox" />
-              <label for="ac-1">About us</label>
-              <article class="ac-small">
-                <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.</p>
-              </article>
+          <div class="column">
+            <div class="page-heading">
+              <h2>FAQ</h2>
             </div>
-            <div>
-              <input id="ac-2" name="accordion-1" type="checkbox" checked />
-              <label for="ac-2">How we work</label>
-              <article class="ac-medium">
-                <p>Like you, I used to think the world was this great place where everybody lived by the same standards I did, then some kid with a nail showed me I was living in his world, a world where chaos rules not order, a world where righteousness is not rewarded. That's Cesar's world, and if you're not willing to play by his rules, then you're gonna have to pay the price. </p>
-              </article>
+            <div class="page-container animated bounceInUp">
+              <section class="xt-accordion">
+                <div>
+                  <input id="ac-1" name="accordion-1" type="checkbox" />
+                  <label for="ac-1">What is XT SUMMIT?</label>
+                  <article class="ac-small">
+                    <ul>
+                      <li><strong>Vision... Excellence... Collaborate... Sharing Knowledge... Share Experience...</strong>
+                        <p>XTSUMMIT is the Platform where people can come showcase their talent; talk about their work; share their experience and also listen as to what is going on; what is the vision; where do we need to go.</p>
+                      </li>
+                      <li><strong>!(ng || React)???</strong>
+                        <P>This year’s theme is: not Angular and not React!</P>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+                <div>
+                  <input id="ac-2" name="accordion-1" type="checkbox" />
+                  <label for="ac-2">Important Dates</label>
+                  <article class="ac-medium">
+                    <ul>
+                      <li>Deadline for submitting the Topic: 15th May</li>
+                      <li>Review of the Presentation/Deck: 23rd May</li>
+                      <li>Dry Runs: 31st May until 02nd June (Bangalore) & 14th June until 16th June (Gurgaon)</li>
+                      <li>XTSummit Bangalore: 9th June, 2017, 9:00 am to 6:00 pm</li>
+                      <li>XTSummit NCR in Gurgaon: 23rd June 2017, 9:00 am to 6:00 pm</li>
+                      <li>The venue details will be in your inbox soon</li>
+                    </ul>
+                  </article>
+                </div>
+                <div>
+                  <input id="ac-3" name="accordion-1" type="checkbox" />
+                  <label for="ac-3">For the Presenters... come become one, submit your talk</label>
+                  <article class="ac-large">
+                    <ul>
+                      <li><strong>Interested in speaking on !(ng || React)?</strong>
+                        <p>Please submit your topic here. Please note: Last date for submission of topics is: 15th May Yes, we will have multiple dry runs planned in order to help you structure the presentation and plan the demo as per the duration.</p>
+                      </li>
+                      <li><strong>Submission Type</strong>
+                        <p>Showcase: 10 mins Presentation; 10 mins demo Flash Talk: 15 mins</p>
+                      </li>
+                      <li><strong>Selection Criterion</strong>
+                        <p>We need to ensure that the topic is relevant as per the theme. The best entries will be selected and duly informed.</p>
+                      </li>
+                      <li><strong>For any more specific needs around your presentation:</strong>
+                        <p>Mention in the requirement sections while submitting and the XTSummit core team from each location will help you for the same basis the selection criteria</p>
+                      </li>
+                      <li><strong>I need a mentor/consultation for my topic?</strong>
+                        <p>Yes, we will have team who will review the topics and help you revamp your presentations. Also planned to have multiple dry runs planned in order to help you structure and formalize your presentation/talk and plan the demo as per the duration.</p>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+                <div>
+                  <input id="ac-4" name="accordion-1" type="checkbox" />
+                  <label for="ac-4">Join Us</label>
+                  <article class="ac-large">
+                    <ul>
+                      <li><strong>Join the core Team?</strong>
+                        <p>Kindly reach out to Bhumika Sharma for Bangalore and Deepjyot Kaur for NCR.</p>
+                      </li>
+                      <li><strong>Need a PID to be used for time tracking &amp; transport request?</strong>
+                        <p>PID 90575 and task as XTSummit and same as for TMS and please do not forget to change the location manually from top right hand side</p>
+                      </li>
+                      <li><strong>I have more questions</strong>
+                        <p>Post your questions/comments on this page or write to XTIndiaCommunication</p>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
             </div>
-            <div>
-              <input id="ac-3" name="accordion-1" type="checkbox" />
-              <label for="ac-3">References</label>
-              <article class="ac-large">
-                <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man. </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-4" name="accordion-1" type="checkbox" />
-              <label for="ac-4">Contact us</label>
-              <article class="ac-large">
-                <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'? Why don't they know? If they don't know, that means we never told anyone. And if we never told anyone it means we never made it back. Hence we die down here. Just as a matter of deductive logic. </p>
-              </article>
-            </div>
-          </section>
           </div>
         </div>
       </div>
       <% include /global-includes/xt-footer.ejs %>
   </body>
-</html>
+
+  </html>

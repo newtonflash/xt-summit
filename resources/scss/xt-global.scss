@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+//themes
 @import "themes/default/xt-settings";
 
 //libraries
@@ -7,39 +8,34 @@
 //@import "libs/staticframe/sf-utils";
 //@import "libs/bootstrap/bootstrap";
 @import "libs/foundation/foundation";
+@import "libs/font-awesome/font-awesome";
 @import "libs/animate/animate";
 
-//insert your theme constants here
-//@import "themes/default/fonts";
-//@import "themes/default/constants";
 
-//global utilities
-//@import "global-partials/xt-base";
+//global partials
 //@import "global-partials/sf-mixins";
 @import "global-partials/xt-layouts";
-@import "global-partials/forms";
 @import "global-partials/xt-base";
 @import "global-partials/xt-header";
-@import "modules/xt-nav";
+@import "global-partials/xt-main-nav";
+@import "global-partials/xt-mobile-nav";
 @import "global-partials/xt-footer";
-@import "global-partials/xt-slideShow";
-@import "global-partials/xt-cards";
-@import "global-partials/xt-wordCloud ";
-
+@import "global-partials/xt-wordCloud";
 
 //components
+@import "component/xt-accordion";
+@import "component/xt-forms";
+@import "component/xt-hero";
+@import "component/xt-slideShow";
+@import "component/xt-tabs";
+
+//patterns
 @import "patterns/atoms/button";
 @import "patterns/atoms/icons";
 
-
-
 //modules - if your site is small you can include modules in once single file,
 // else you can separate it out to another file
-@import "modules/home-page";
-//@import "modules/xt-nav";
-@import "modules/xt-accordion";
-@import "modules/xt-tabs";
-@import "modules/xt-media";
 @import "modules/xt-behind";
-//@import "modules/register";
-
+@import "modules/xt-credits";
+@import "modules/xt-index";
+@import "modules/xt-media";

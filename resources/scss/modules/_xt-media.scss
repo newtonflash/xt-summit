@@ -1,5 +1,4 @@
 $xt-media-width: 300px;
-
 .xt-media-container {
   margin: 0 auto;
   label {
@@ -7,29 +6,53 @@ $xt-media-width: 300px;
     height: 30px;
     cursor: pointer;
     float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    position: relative;
+    &:after {
+      content: '';
+      height: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 100%;
+      background: $blue1;
+      //transition: right 0.3s linear;
+    }
+    &:hover {
+      color: $blue1;
+    }
+    /* &:hover {
+      &:after {
+        right: 0;
+        background: $blue4;
+        transition: right 0.3s linear;
+      }
+    } */
   }
   input {
     display: none;
-    &.xt-media-selector-all:checked ~ label.xt-media-label-all,
-    &.xt-media-selector-1:checked ~ label.xt-media-label-1,
-    &.xt-media-selector-2:checked ~ label.xt-media-label-2,
-    &.xt-media-selector-3:checked ~ label.xt-media-label-3 {
-      border-bottom: 2px solid #000;
+    &:checked {
+      + label:after {
+        right: 0;
+        transition: right 0.3s linear;
+      }
     }
     &.xt-media-selector-all:checked ~ .xt-media-items li {
       width: $xt-media-width;
       transform: scale(1, 1);
       transition: transform 0.3s linear;
     }
-    &.xt-media-selector-1:checked ~ .xt-media-items .media-year-2015,
+    &.xt-media-selector-1:checked ~ .xt-media-items .media-year-2017,
     &.xt-media-selector-2:checked ~ .xt-media-items .media-year-2016,
-    &.xt-media-selector-3:checked ~ .xt-media-items .media-year-2017 {
+    &.xt-media-selector-3:checked ~ .xt-media-items .media-year-2015 {
       transition: transform 0.3s linear, width 0s linear 0.3s;
       animation: scaleUp 0.3s linear 0.4s forwards;
     }
-    &.xt-media-selector-1:checked ~ .xt-media-items li:not(.media-year-2015),
+    &.xt-media-selector-1:checked ~ .xt-media-items li:not(.media-year-2017),
     &.xt-media-selector-2:checked ~ .xt-media-items li:not(.media-year-2016),
-    &.xt-media-selector-3:checked ~ .xt-media-items li:not(.media-year-2017) {
+    &.xt-media-selector-3:checked ~ .xt-media-items li:not(.media-year-2015) {
       animation: scaleDown 0.3s linear forwards;
     }
   }
@@ -38,7 +61,6 @@ $xt-media-width: 300px;
 .xt-media-items {
   position: relative;
   margin: 0px auto;
-  padding-top: 20px;
   list-style: none;
   @include clearfix;
   li {
@@ -53,40 +75,12 @@ $xt-media-width: 300px;
     position: relative;
     padding: 10px;
     background: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    margin: 4px;
-    &:after {
-      content: attr(data-img);
-    }
-    span {
-      display: block;
-      background: rgba(113, 123, 161, 0.9);
-      font-style: italic;
-      color: #fff;
-      font-weight: bold;
-      padding: 20px;
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      width: 120px;
-      height: 0px;
-      overflow: hidden;
-      opacity: 0;
-      text-align: center;
-      text-shadow: 1px 1px 1px #303857;
-      transition: all 0.3s ease-in-out;
-    }
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.07), 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    margin: 15px;
     img {
       display: block;
       width: 100%;
       height: auto;
-      &:after {
-        content: attr(data-img);
-      }
-    }
-    &:hover span {
-      height: 80px;
-      opacity: 1;
     }
   }
 }

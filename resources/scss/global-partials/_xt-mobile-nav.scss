@@ -1,10 +1,9 @@
-.main-nav {
+.xt-mobile-nav {
     float: right;
     #menuToggle {
         display: block;
         position: relative;
         top: 0px;
-        left: 50px;
         z-index: 90;
         -webkit-user-select: none;
         user-select: none;
@@ -90,7 +89,7 @@
  */
     #menu {
         position: absolute;
-        left: -45px;
+        left: -63px;
         -webkit-perspective: 800px;
         -webkit-perspective-origin: 50% 200px;
         -moz-perspective: 800px;
@@ -150,7 +149,7 @@
             position: absolute;
             height: 310px;
             width: 300px;
-            border: 1px solid #555;
+            border: 1px solid $blue6;
             border-radius: 3px;
             background: #fff;
             &.front {

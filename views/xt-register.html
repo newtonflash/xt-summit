@@ -1,34 +1,46 @@
 <% include /global-includes/html-header.ejs %>
+
   <body>
     <% include /global-includes/xt-header.ejs %>
-      <div class="content-wrapper">
+      <div class="page-wrapper">
         <div class="row">
           <div class="column">
-        <form action="/thank-you.html" method="post">
-            <fieldset>
-                <legend>Register Your top</legend>
-                <div class="form-ctrl">
-                    <label for="name">Name:</label>
-                    <input id="name" name="name" value="" required  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" aria-required="true" aria-describedby="name-format">
-                    <span id="name-format" class="help">Format: firstname lastname</span>
+            <section class="page-heading">
+              <h2>Sign in</h2>
+            </section>
+            <section class="page-container">
+              <div class="component-wrapper xt-form">
+                <div class="row align-center">
+                  <div class="column small-12 medium-9 large-8">
+                    <form class="animated bounceInUp" action="/thank-you.html" method="post">
+                      <div class="row">
+                        <div class="column">
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" placeholder="Firstname Lastname" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="Firstname Lastname" aria-required="true">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="column">
+                          <label for="numTickets">Sapient Id:</label>
+                          <input type="number" id="numTickets" placeholder="123456" required aria-required="true">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="column">
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" placeholder="email@sapient.com" required aria-required="true">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="column">
+                          <button class="button" type="submit">Sign in</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-                <div class="form-ctrl">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" value="" required aria-required="true">
-                </div>
-                <div class="form-ctrl">
-                    <label for="website">Website:</label>
-                    <input type="url" id="website" name="website" value="">
-                </div>
-                <div class="form-ctrl">
-                    <label for="numTickets"><abbr title="Number">No.</abbr> of Tickets:</label>
-                    <input type="number" id="numTickets" name="numTickets" value="" required aria-required="true" min="1" max="4">
-                </div>
-                <div class="form-ctrl submit">
-                    <input type="submit" value="Submit">
-                </div>
-            </fieldset>
-        </form></div>
+              </div>
+          </div>
         </div>
       </div>
       <% include /global-includes/xt-footer.ejs %>

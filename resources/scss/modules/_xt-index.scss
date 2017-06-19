@@ -1,0 +1,17 @@
+.trending-topics {
+  padding: 32px 0;
+  background: #fcfcfc;
+  .component-heading h3 {
+    color: $blue1;
+    //text-shadow: rgb(0, 43, 65) 1px 1px 0px;
+    font-size: 72px;
+    font-weight: bold;
+  }
+  .card-section {
+  	h6 {
+  		margin-bottom: 16px;
+
+  	}
+  }
+}
+

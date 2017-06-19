@@ -6,6 +6,7 @@ images_dir = "public/images/"
 fonts_dir = "public/fonts"
 javascripts_dir = "public/js"
 add_import_path "node_modules/foundation-sites/scss"
+add_import_path "node_modules/font-awesome/scss"
 
 sourcemap = true
 
