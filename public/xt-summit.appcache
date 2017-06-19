@@ -2,4 +2,23 @@ CACHE MANIFEST
 # v1 - 2011-08-13
 # This is a comment.
 index.html
-logo.png
+css/xt-global.css
+images/header-back.png
+images/footer-back.png
+images/bg-media.jpg
+images/arrows.png
+fonts/fontawesome-webfont.woff2?v=4.7.0
+images/logo.png
+images/favicon.png
+images/manish.jpg
+images/manjari.jpg
+images/gaurav.jpg
+images/media_1.jpg
+images/media_2.jpg
+images/media_3.jpg
+images/media_4.jpg
+images/media_5.jpg
+images/media_6.jpg
+images/media_7.jpg
+images/media_8.jpg
+images/media_9.jpg

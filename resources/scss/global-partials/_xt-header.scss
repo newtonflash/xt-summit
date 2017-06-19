@@ -13,16 +13,21 @@ body {
 }
 
 .xt-logo {
-    float: left;
-    .logo-img {
-      background: url("../images/logo.png") no-repeat center center transparent;
-      width: 60px;
-      height: $header-height;
-      background-size: contain;
-      display: block;
-    }
-    .logo-text {
-      font-size: 14px;
-      text-transform: uppercase;
-    }
+  float: left;
+  .logo-img {
+    background: url("../images/logo.png") no-repeat center center transparent;
+    width: 60px;
+    height: $header-height;
+    background-size: contain;
+    display: block;
   }
+  .logo-text {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+/* .xt-main-nav {
+  display: none;
+} */
+
