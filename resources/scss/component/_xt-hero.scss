@@ -1,0 +1,75 @@
+.xt-hero {
+  &.component-wrapper {
+    margin: 100px 0;
+    //padding: 80px 0;
+  }
+  .xt-logo {
+    float: none;
+    position: relative;
+    .logo-img {
+      width: 300px;
+      height: 150px;
+      margin-bottom: 16px;
+    }
+    .logo-text {
+      font-size: 74px;
+      text-transform: uppercase;
+      /* font-weight: bold; */
+      line-height: 1;
+      letter-spacing: 12px;
+      color: $blue6;
+    }
+    .logo-year {
+      transform: rotateZ(90deg);
+      display: block;
+      position: absolute;
+      left: 260px;
+      font-size: 62px;
+      top: 49px;
+      line-height: 1;
+      color: $blue1;
+    }
+  }
+  .sub-title {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .sub-text {
+    margin-bottom: 16px;
+  }
+  .summit-detail {
+    .summit-place {
+      display: block;
+    }
+    .summit-date {
+      position: relative;
+      display: block;
+      font-size: 24px;
+      padding-left: 45px;
+      padding-top: 16px;
+      .date {
+        position: absolute;
+        z-index: 2;
+        top: 15px;
+        left: 7px;
+      }
+      .fa {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 5px;
+        font-size: 42px;
+      }
+    }
+  }
+  .card-section {
+    padding: 32px;
+  }
+  h4,
+  p {
+    margin-bottom: 32px;
+  }
+}
+

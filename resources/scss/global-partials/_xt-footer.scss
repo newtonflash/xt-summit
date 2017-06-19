@@ -1,3 +1,23 @@
 .main-footer {
 	text-align: right;
+	padding-top: 90px;
+	.footer-links {
+		float: right;
+		li {
+			float: left;
+			padding: 0 10px;
+			border-left: 1px solid $blue1;
+			line-height: 1;
+			&:first-child {
+				border-left: 0
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+		a {
+			font-size: 12px;
+    text-transform: uppercase;
+		}
+	}
 }

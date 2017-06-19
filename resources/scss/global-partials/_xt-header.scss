@@ -1,22 +1,23 @@
 body {
-  padding-top: 86px;
+  padding-top: $header-height;
 }
 
 .main-header {
   background: rgba(255, 255, 255, 1);
   border-bottom: 1px solid lightskyblue;
-  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
-  .logo {
+}
+
+.xt-logo {
     float: left;
     .logo-img {
       background: url("../images/logo.png") no-repeat center center transparent;
-      width: 90px;
-      height: 45px;
+      width: 60px;
+      height: $header-height;
       background-size: contain;
       display: block;
     }
@@ -25,5 +26,3 @@ body {
       text-transform: uppercase;
     }
   }
-  
-}

@@ -1,0 +1,48 @@
+.xt-tabs {
+  .tab-content {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid $grey4;
+  }
+  input {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid transparent;
+    &:hover {
+      color: $blue1;
+      cursor: pointer;
+    }
+  }
+  input:checked + label {
+    border: 1px solid $grey4;
+    border-top: 4px solid $blue1;
+    border-bottom: 1px solid $white;
+  }
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2,
+  #tab3:checked ~ #content3,
+  #tab4:checked ~ #content4 {
+    display: block;
+  }
+  @media screen and (max-width: 650px) {
+    label {
+      font-size: 0;
+      &:before {
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    label {
+      padding: 15px;
+    }
+  }
+}
+

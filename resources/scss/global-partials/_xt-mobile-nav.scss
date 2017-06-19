@@ -1,4 +1,4 @@
-.main-nav {
+.xt-mobile-nav {
     float: right;
     #menuToggle {
         display: block;
@@ -149,7 +149,7 @@
             position: absolute;
             height: 310px;
             width: 300px;
-            border: 1px solid #555;
+            border: 1px solid $blue6;
             border-radius: 3px;
             background: #fff;
             &.front {

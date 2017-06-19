@@ -49,6 +49,7 @@ $card-height: 300px;
     	transform: rotateY(-90deg) translateZ(75px);
     }
     &-right {
+      display: none;
     	right: 0;
     	transform: rotateY(-90deg) translateZ(-75px);
     }
@@ -80,20 +81,15 @@ $card-height: 300px;
 
 }
 .credit-thumb {
-	height: 100px;
-	width: 100px;
+	height: 145px;
+	width: 145px;
 	border-radius: 100%;
 	border: 5px solid #29659c;
 	overflow: hidden;
 	margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .credit-detail {
  text-align: center;
 }
-
-
-@media only screen
-  and (min-width: 320px)
-  and (max-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2) {}

@@ -9,8 +9,8 @@ body {
   background-image: url("../images/header-back.png"), url("../images/footer-back.png");
   background-size: 40%, 40%;
   background-repeat: no-repeat;
-  background-position: 100% 86px, bottom left;
-  padding-bottom: 100px;
+  background-position: 100% $header-height, bottom left;
+  //padding-bottom: 100px;
 }
 
 $row-margin: 60px;
