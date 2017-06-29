@@ -9,6 +9,7 @@
     "ejs": "1.0.0",
     "errorhandler": "^1.1.1",
     "express": "~4.9.0",
+    "font-awesome": "^4.7.0",
     "foundation-sites": "^6.3.1",
     "method-override": "*",
     "serve-favicon": "~2.1.3",
